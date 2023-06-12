@@ -50,7 +50,7 @@ public class BidController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")//endpoint
     public ResponseEntity<Void> deleteBid(@PathVariable("id") Integer id) {
         boolean deleted = bidService.deleteBid(id);
         if (deleted) {
